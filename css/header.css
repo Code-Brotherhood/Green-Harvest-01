@@ -1,0 +1,187 @@
+/* -----------desktop---------- */
+*{
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0; 
+}
+ul{
+    
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.hamburger-icon{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+   justify-content:space-between;
+    align-items: center;
+    height: 52px;
+    gap: 20px;
+    opacity: 0px;    
+    background-color: black;
+
+}
+.nav-menu{
+    display: flex;
+    
+}
+.nav-logo{
+display: flex;
+margin-left:100px ; 
+width: 216px;
+height: 20px;
+padding: 0px 0.44px 0px 0px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.nav-ul{
+    align-items: center;
+    padding-left: 366px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    height: 44px;
+    gap: 8px;
+    opacity: 0px;
+    background-color: transparent;
+    color: #FBFBFB;
+
+}
+
+.nav-ul li{
+padding-top: 12px;
+padding-bottom: 12px;
+border-radius: 12px;
+opacity: 0px;
+border: 1px solid #FBFBFb;
+}
+.nav-ul li:hover {
+  
+    background-color:#D4BFC4 ;
+    color: #7A3145;
+    }
+.nav-ul li:active {
+    background-color:#FBFBFB;
+    color: #7A3145;
+}
+.nav-ul li a:hover{
+  
+    
+    color: #7A3145;
+    }
+.nav-ul li a:active{
+    
+    color: #7A3145;
+}
+
+
+.nav-ul a{
+width: 94px;
+height: 20px;
+text-align: center;
+gap: 0px;
+opacity: 0px;
+font-family: Inter Tight;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+color: #FBFBFB;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.nav-button{
+    padding: 16px 32px;
+    margin-right: 100px;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 30px ;
+    opacity: 0px;
+    background: #7A3145;
+    color: #FBFBFB;
+    font-family: Inter Tight;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+
+}
+.nav-button:hover{
+    background: #D4BFC4;
+    color:#7A3145;
+}
+.nav-button:active{
+    background: #FBFBFB;
+        color:#7A3145;
+}
+@media   (min-width: 320px) and (max-width: 767px){
+ .nav-ul,.nav-button{
+     display: none;
+    }
+    .hamburger-icon{
+        display: block;
+        margin-right: 20px;
+        padding: 8px 5.33px 8px 5.33px;
+        gap: 0px;
+        opacity: 0px;
+        
+
+
+    }
+    .nav-logo{
+        width: 168px;
+        height: 16px;
+        gap: 4px;
+        opacity: 0px;
+        margin-left: 20px;
+        display: flex;
+        padding: 0px 0.44px 0px 0px;
+        
+        }
+    .nav-ul{
+      
+        background: #576F35;
+}
+}
+@media   (min-width: 768px) and (max-width: 1279px){
+    .nav-ul,.nav-button{
+     display: none;
+    }
+     .hamburger-icon{
+         display: block;
+         margin-right: 20px;
+         padding: 8px 5.33px 8px 5.33px;
+         gap: 0px;
+         opacity: 0px;
+ 
+     }
+     .nav-logo{
+        display: flex;
+        margin-left:32px ; 
+        width: 216px;
+        height: 20px;
+        padding: 0px 0.44px 0px 0px;
+        gap: 0px;
+        opacity: 0px;
+        
+        }
+    }
+ 

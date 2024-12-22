@@ -1,0 +1,136 @@
+.section-white h2 {
+  display: none;
+}
+.container {
+  width: 1054px;
+  height: 228px;
+  gap: 10px;
+  margin: 100px;
+}
+
+.advertisement-discount {
+  background-color: #576f35;
+  color: #fbfbfb;
+  font-family: "Inter Tight";
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: -1.5%;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 808px;
+  height: 84px;
+  top: -4px;
+}
+
+.three-second {
+  font-family: "Inter Tight";
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-underline-position: "from-font";
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.advertisement-description {
+  width: 100%;
+  --pseudo-heigth: calc(1em * 1.08 * 2);
+}
+
+.advertisement-description {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.advertisement-discount .three-second .discount .three-second-white {
+  width: 675px;
+  height: 86px;
+  border-radius: 12px;
+  background-color: #576f35;
+  color: #fbfbfb;
+}
+
+.advertisement-discount.three-second::before {
+  content: "";
+  width: 100%;
+  height: var(--pseudo-heigth);
+  left: 0px;
+  top: 0;
+  position: absolute;
+  background-color: var(--green);
+  border-radius: 25px;
+  display: inline-block;
+  z-index: -1;
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .advertisement-description {
+    --pseudo-heigth: calc(1em + 11px * 2);
+    width: 704px;
+    height: 288px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .advertisement-discount {
+    margin-top: 20px;
+    width: 708px;
+    height: 256px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .advertisement-discount.three-second::before {
+    top: -20px;
+    position: absolute;
+  }
+  .section-white {
+    width: 768px;
+    height: 488px;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 375px;
+    height: 472px;
+    top: 2048px;
+    padding: 80px 20px 80px 20px;
+    gap: 10px;
+    opacity: 0px;
+  }
+
+  .advertisement-description {
+    width: 375px;
+    height: 472px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.5%;
+  }
+
+  .advertisement-discount {
+    margin-top: 20px;
+    width: 335px;
+    height: 102px;
+    font-size: 48px;
+    line-height: 52px;
+    padding-right: 142px;
+  }
+
+  .advertisement-discount.three-second::before {
+    top: -20px;
+    position: absolute;
+  }
+  .section-white {
+    width: 335px;
+    height: 312px;
+  }
+}
